@@ -17,5 +17,11 @@ public class HashTableMain {
         }
 
         System.out.println(hashTable);
+        if(hashTable.remove("avoidable"))
+            System.out.println("Given Word is Removed!");
+        else
+            System.out.println("Word is NOT Removed!");
+
+        System.out.println(hashTable);
     }
 }

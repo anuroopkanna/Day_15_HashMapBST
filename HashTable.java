@@ -49,4 +49,10 @@ public class HashTable <K,V>{
                 "bucketArray=" + bucketArray +
                 '}';
     }
+
+    public boolean remove(K key) {
+        int index= getIndex(key);
+        HashLinkedList<K, V> myLinkedList = bucketArray.get(index);
+        return (myLinkedList.delete(key));
+    }
 }
